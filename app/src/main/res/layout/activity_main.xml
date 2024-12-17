@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:id="@+id/pictures"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pic1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/left_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="left_onclick"
+        android:text="&lt;"
+        android:textColor="#FFC107"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        />
+
+    <Button
+        android:id="@+id/right_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:onClick="right_onclick"
+        android:layout_alignParentRight="true"
+        android:text="&gt;"
+        android:textColor="#FFC107"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>
